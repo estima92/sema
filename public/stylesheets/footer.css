@@ -1,0 +1,27 @@
+footer {
+    background: #0865aa;
+}
+footer img.logo {
+    display: inline-block;
+    width: 5%;
+}
+footer nav {
+    display: inline-block;
+}
+footer nav a {
+    display: inline-block;
+    padding: 1%;
+    font-size: 1vw;
+    color: white;
+    text-decoration: none;
+}
+footer nav a:focus, footer nav a:hover {
+    text-decoration: underline;
+}
+footer ul {
+    display: inline;
+    list-style: none;
+}
+footer ul li {
+    display: inline-block;
+}
