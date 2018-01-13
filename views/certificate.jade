@@ -1,5 +1,41 @@
 extends layout
-
+block css
+  link(rel='stylesheet', href='/stylesheets/certificate.css')
 block content
-  h1= title
-  p Welcome to #{title}
+  .wrap
+    .header-wrap
+      .header
+        include elements/header
+        .info
+          h1 СЕРТИФИКАТ
+      .big-logo
+        div.info
+          p Консалтинг бюро
+          p
+            span Анна Шегай
+            sup TM
+            span &nbspМосква
+          p Работаем по России
+          a(href="tel:+7 916 589 3544") +7 916 589 3544
+          a(href="mailto:trts021@gmail.com") trts021@gmail.com
+        img(src="/images/big_logo.png")
+    .content
+      .col-8.flex-s-b
+        .item
+          h3 СЕРТИФИКАТ -
+          p это демонстрация эффективно функционирующей СМБПП (ХАССП или ИСО 22000).
+          br
+          i Сертификат выдается на 3 года.
+          br
+          p Из практического опыта сертификат требуется при участии в тендере, госзаказах, работе с торговыми сетями Ашан, Х5, Metro Cash&Carry, Spar и др.
+          br
+          h3 СТОИМОСТЬ
+          p сертификата определяется после анализа предприятия (выезд), а также количества процессов, количества и месторасположения площадок.
+          br
+          i Срок выдачи сертификата от 5 дней.
+        img(src="/images/tolpa.png")
+      .col-4
+        img(src="/images/iso.png")
+        img(src="/images/rst.png" style="margin: 10px 0 0")
+
+    include elements/footer

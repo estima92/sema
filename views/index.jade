@@ -1,11 +1,13 @@
 extends layout
-
+block css
+  link(rel='stylesheet', href='/stylesheets/index.css')
 block content
   .wrap
     .header-wrap
       .header
         include elements/header
         .info
+          h1 КОНСАЛТИНГ И АУДИТ СИСТЕМ МЕНЕДЖМЕНТА БЕЗОПАСНОСТИ ПИЩЕВОЙ ПРОДУКЦИИ ХАССП (HACCP), ISO 22000
       .big-logo
         div.info
           p Консалтинг бюро
@@ -57,10 +59,11 @@ block content
             br
             p ИСО 22000- это система менеджмента безопасности пищевой продукции требуется при экспорте в страны ЕС, США, Новой Зеландии, Канады, Японии и др., а также при работе с международными торговыми сетями.
         .col-3
-          img
+          img(src="/images/human_r.png" style="width: 100%; position: relative; top: 10px;")
         .col-3
           .item
             h3 Штрафные санкции
+            br
             p.
               За несоблюдение производителем
                         пищeвой продукции требований
@@ -75,6 +78,7 @@ block content
                 с возможным приостановлением
                 деятельности предприятия,
                 изъятия готовой продукции.
+
     include elements/footer
 
 
